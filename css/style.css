@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  overflow: hidden; }
+
+ul {
+  list-style: none; }
+
+.icon {
+  width: 3em;
+  height: 3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+@font-face {
+  font-family: 'Sacs';
+  src: url("../media/OPPOSans-M.ttf"); }
+
+.centent .Pages {
+  height: 100%;
+  width: 100%;
+  margin: auto; }
+
+.wrap {
+  height: 98%;
+  width: 98%;
+  background: #1c1c1c;
+  border-radius: 2vw;
+  margin: 10px;
+  font-family: 'Sans';
+  overflow: hidden; }
+
+.nav {
+  width: 20%;
+  height: 100%;
+  float: left;
+  padding: 1%;
+  color: #ffffff;
+  background: #000000; }
+  .nav .nav-head {
+    height: 10%;
+    width: 100%;
+    padding: 8%; }
+  .nav .nav-centent {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 80%; }
+    .nav .nav-centent .nav-centent-butt {
+      width: 90%;
+      height: 14.28571%;
+      border-radius: 1vw;
+      background: #1e1c1d;
+      margin: auto;
+      transition: transform 0.5s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10% 0 10%;
+      overflow: hidden; }
+  .nav .nav-foot {
+    height: 10%;
+    width: 100%;
+    padding: 10%;
+    border-top: 1px solid; }
+    .nav .nav-foot span {
+      float: right;
+      font-size: 1.2vw;
+      font-weight: bold; }
+
+.centent {
+  width: 80%;
+  height: 100%;
+  float: right;
+  padding: 2%; }
+  .centent .Pages {
+    display: none;
+    animation: leftIn 0.5s both; }
+
+#Page1 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  #Page1 .Page1-aside {
+    width: 31.25%;
+    height: 25%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 1vw;
+    background: #000000;
+    transition: all 0.5s;
+    color: darkgray; }
+    #Page1 .Page1-aside span {
+      height: 1vw;
+      width: 1vw;
+      border-radius: 100vw;
+      display: inline-block; }
+    #Page1 .Page1-aside .Page1-aside-wrap {
+      margin-top: 5%;
+      height: 80%;
+      width: 100%;
+      font-size: 1.1vw; }
+    #Page1 .Page1-aside .Page1-aside-X {
+      width: 5%;
+      height: auto;
+      float: right;
+      display: none; }
+      #Page1 .Page1-aside .Page1-aside-X img {
+        width: 100%; }
+      #Page1 .Page1-aside .Page1-aside-X:hover {
+        cursor: pointer; }
+  #Page1 .Page1-centent {
+    height: 30%;
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 2vw;
+    background: #000000; }
+  #Page1::-webkit-scrollbar {
+    display: none; }
+
+.footer {
+  position: absolute;
+  font-size: 1.2vw;
+  bottom: 3%;
+  left: 47%;
+  font-weight: bold; }
+
+#Page4 {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%; }
+  #Page4 .Page4-wrap {
+    height: 300%;
+    width: 60%;
+    margin: auto;
+    overflow: auto; }
+    #Page4 .Page4-wrap::-webkit-scrollbar {
+      display: none; }
+
+.Page4-aside {
+  padding: 4%;
+  height: auto;
+  width: 100%;
+  background: #373737;
+  margin-bottom: 2%;
+  color: #ffffff;
+  animation: Page4In 3s 0.5s; }
+  .Page4-aside:nth-child(1) .Page4-aside1-bott {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; }
+  .Page4-aside:nth-child(2) ul, .Page4-aside:nth-child(4) ul {
+    display: flex;
+    flex-direction: column; }
+    .Page4-aside:nth-child(2) ul li time, .Page4-aside:nth-child(4) ul li time {
+      float: left;
+      width: 35%;
+      display: block;
+      background-color: orangered;
+      position: relative; }
+      .Page4-aside:nth-child(2) ul li time::after, .Page4-aside:nth-child(4) ul li time::after {
+        content: '';
+        border-top: 0.73vw solid transparent;
+        border-left: 1.3vw solid orangered;
+        border-bottom: 0.73vw solid transparent;
+        position: absolute;
+        right: -9%;
+        top: 0%; }
+    .Page4-aside:nth-child(2) ul li > div, .Page4-aside:nth-child(4) ul li > div {
+      padding-bottom: 5%;
+      width: 60%;
+      border-left: red solid 1px;
+      padding-left: 2%;
+      float: right; }
+  .Page4-aside:nth-child(3) .Page4-aside3-wrap {
+    display: flex;
+    justify-content: space-around; }
+    .Page4-aside:nth-child(3) .Page4-aside3-wrap > div {
+      padding: 1%;
+      flex: 1; }
+  .Page4-aside:nth-child(3) .Page4-aside3-wrap-p {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 60%;
+    float: right; }
+    .Page4-aside:nth-child(3) .Page4-aside3-wrap-p span {
+      width: 1vw;
+      height: 1vw;
+      display: inline-block;
+      border: 1px solid orangered;
+      border-radius: 100vw; }
+    .Page4-aside:nth-child(3) .Page4-aside3-wrap-p .Page4-aside3-wrap-p-last {
+      width: auto;
+      height: auto;
+      color: darkgrey;
+      border: none;
+      background-color: transparent; }
